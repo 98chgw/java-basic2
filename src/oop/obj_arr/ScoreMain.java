@@ -59,10 +59,7 @@ public class ScoreMain {
                 continue;
             }
 
-            s.setName(name);
-            s.setKor(kor);
-            s.setEng(eng);
-            s.setMath(math);
+//            Score s = new Score(name, kor, eng, math);
             s.setTotalAndAvg();
 
 //            int total = kor + eng + math;

@@ -20,9 +20,18 @@ public class Score {
     private int total;
     private double average;
 
-    public String getName() {
-        return name;
+    public Score() {
     }
+
+    public Score(String name, int kor, int eng, int math) {
+        this.name = name;
+        this.kor = kor;
+        this.eng = eng;
+        this.math = math;
+        this.setTotalAndAvg();
+    }
+
+    public String getName() { return name; }
 
     public void setName(String name) {
         this.name = name;
@@ -85,8 +94,9 @@ public class Score {
     }
 
     // 점수 유효성 검증
-    public boolean isValidateScore(int score) {
-        if(score > 100 || score < 0) {
+    public static boolean isValidateScore(int score) {
+
+        if (score > 100 || score < 0) {
             System.out.println("유효하지 않은 점수입니다. (0 ~ 100)");
             return false;
         }
