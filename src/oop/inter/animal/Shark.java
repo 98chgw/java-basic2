@@ -1,15 +1,6 @@
 package oop.inter.animal;
 
-public class Shark extends Livings implements BadAnimal {
-    @Override
-    public void feed(String foodName) {
-
-    }
-
-    @Override
-    public boolean sleep() {
-        return false;
-    }
+public class Shark implements Huntable, Violent {
 
     @Override
     public void hunt(Animal animal) {

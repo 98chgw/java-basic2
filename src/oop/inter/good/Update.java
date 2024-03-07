@@ -1,11 +1,13 @@
 package oop.inter.good;
 
-public class Update {
+public class Update implements IUserService {
+
     public Update() {
-        System.out.println("회원정보수정 요청이 들어옴!");
+        System.out.println("회원 정보 수정 요청이 들어옴!");
     }
-    
-    public void  update() {
-        System.out.println("수정 정보를 받아서 DB에서 수정 조치");
+
+    @Override
+    public void execute() {
+        System.out.println("수정 정보를 받아서 데이터베이스에서 수정 조치....");
     }
 }

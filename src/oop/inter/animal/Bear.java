@@ -1,6 +1,7 @@
 package oop.inter.animal;
 
 public class Bear extends Livings implements BadAnimal {
+
     @Override
     public void feed(String foodName) {
 

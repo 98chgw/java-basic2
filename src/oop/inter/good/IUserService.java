@@ -6,10 +6,10 @@ package oop.inter.good;
 
  - 또한, 객체를 생성할 때 인터페이스 타입 하나만으로
  여러가지 객체들을 상황에 맞게 교체할 수 있다는 장점도 생깁니다. (다형성)
- */
+*/
+
 public interface IUserService {
 
-
-    void execute(); //추상 메서드
-
+    void execute(); // 추상 메서드
+    
 }
